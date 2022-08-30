@@ -1,4 +1,6 @@
 const choices = ["rock", "paper", "scissors"];
+let computerScore = 0;
+let playerScore = 0;
 
 function getComputerChoice() {
     const random = (Math.floor(Math.random() * 3));
@@ -9,18 +11,31 @@ function playRound(playerSelection, computerSelction) {
     const player = playerSelection.toLowerCase();
     const computer = computerSelction;
     if (player === computer) {
-        return `It's a draw!`;
+        return 0;
     } else if ( player === "rock" && computer === "scissors") {
-        return "You Won! Rock beats Scissors";
+        return playerScore++;
     } else if (player === "paper" && computer === "rock") {
-        return "You Won! Paper beats Rock";
+        return playerScore++;
     } else if (player === "scissors" && computer === "paper") {
-        return "You Won! Scissors beat Paper";
+        return playerScore++;
     } else {
-        return `You lost ${computer} beats ${player}.`
+        return computerScore++;
     }
 }
 
-const playerSelection = "Paper";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection))
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt(`Your'r round! Pick you chioce: `);
+        playRound(playerSelection, getComputerChoice());
+        console.log(playerScore);
+        console.log(computerScore);
+    }
+    if (playerScore > computerScore) {
+        alert(`You Won!`);
+    } else if ( computerScore > playerScore){
+        alert(`Computer Won!`);
+    } else {
+        alert(`It's a Draw!`);
+    }
+}
+game();
