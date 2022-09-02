@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+body {
+  background-color: rgb(71, 71, 71);
+  color: rgb(233, 233, 233);
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik Dirt";
+}
+h1 {
+  font-size: 58px;
+  color: #1ef4b3;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 36px;
+  color: #fd8a29;
+  text-align: center;
+  font-weight: 400;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+button {
+  margin: 2em;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+p {
+  text-align: center;
+  color: #fd8a29;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
