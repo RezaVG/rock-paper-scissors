@@ -45,3 +45,27 @@ p {
   font-weight: 400;
   margin: 0;
 }
+.title,
+.vs {
+  color: #1ef4b3;
+}
+.scores {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 12rem;
+}
+#PlayerScore {
+  font-size: 36px;
+}
+#ComputerScore {
+  font-size: 36px;
+}
+.vs {
+  align-self: flex-end;
+}
+.result {
+  color: #1ef4b3;
+  font-size: 48px;
+  text-align: center;
+  padding: 2rem auto;
+}
