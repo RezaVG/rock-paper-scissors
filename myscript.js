@@ -3,8 +3,10 @@ let computerScore = 0;
 let playerScore = 0;
 let playerSelection;
 const results = document.querySelector(".result");
-const buttons = document.querySelectorAll("button");
-console.log(buttons);
+const buttons = document.querySelectorAll(".container button");
+document
+  .querySelector(".reset")
+  .addEventListener("click", () => window.location.reload());
 
 function getComputerChoice() {
   const random = Math.floor(Math.random() * 3);
